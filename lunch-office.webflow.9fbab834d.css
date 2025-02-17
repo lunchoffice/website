@@ -294,6 +294,88 @@ pre.w-code-block code {
   display: contents;
 }
 
+.w-webflow-badge, .w-webflow-badge > img {
+  box-sizing: unset;
+  width: unset;
+  height: unset;
+  max-height: unset;
+  max-width: unset;
+  min-height: unset;
+  min-width: unset;
+  margin: unset;
+  padding: unset;
+  float: unset;
+  clear: unset;
+  border: unset;
+  border-radius: unset;
+  background: unset;
+  background-image: unset;
+  background-position: unset;
+  background-size: unset;
+  background-repeat: unset;
+  background-origin: unset;
+  background-clip: unset;
+  background-attachment: unset;
+  background-color: unset;
+  box-shadow: unset;
+  transform: unset;
+  direction: unset;
+  font-family: unset;
+  font-weight: unset;
+  color: unset;
+  font-size: unset;
+  line-height: unset;
+  font-style: unset;
+  font-variant: unset;
+  text-align: unset;
+  letter-spacing: unset;
+  -webkit-text-decoration: unset;
+  text-decoration: unset;
+  text-indent: unset;
+  text-transform: unset;
+  list-style-type: unset;
+  text-shadow: unset;
+  vertical-align: unset;
+  cursor: unset;
+  white-space: unset;
+  word-break: unset;
+  word-spacing: unset;
+  word-wrap: unset;
+  transition: unset;
+}
+
+.w-webflow-badge {
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #0000001a, 0 1px 3px #0000001a;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 2147483647 !important;
+  color: #aaadb0 !important;
+  overflow: unset !important;
+  background-color: #fff !important;
+  border-radius: 3px !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 6px !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  position: fixed !important;
+  inset: auto 12px 12px auto !important;
+  transform: none !important;
+}
+
+.w-webflow-badge > img {
+  position: unset;
+  visibility: unset !important;
+  opacity: 1 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   font-weight: bold;
@@ -2184,10 +2266,34 @@ textarea.w-input, textarea.w-select {
   font-size: 18px;
 }
 
+.div-block-2 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.lunch-about-mobile {
+  height: 40vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  display: none;
+  position: relative;
+  bottom: 50%;
+}
+
 @media screen and (max-width: 479px) {
   .lunch-logo {
     aspect-ratio: auto;
     display: none;
+  }
+
+  .neg-space-top {
+    display: none;
+    position: fixed;
+    inset: 0% 0% auto;
   }
 
   .links {
@@ -2197,7 +2303,7 @@ textarea.w-input, textarea.w-select {
   .links-grid {
     grid-column-gap: 20%;
     grid-row-gap: 20%;
-    padding-top: 10vh;
+    padding-top: 20vh;
   }
 
   .image {
@@ -2206,19 +2312,28 @@ textarea.w-input, textarea.w-select {
 
   .lunch-logo-mobile {
     aspect-ratio: auto;
+    height: 70vh;
+    max-height: 70vh;
+    margin-top: 5vh;
     padding-left: 10vw;
     padding-right: 10vw;
     display: block;
+    position: fixed;
+    inset: 0% 0% auto;
   }
 
   .links-mobile {
+    height: 25vh;
+    max-height: 25vh;
     padding-left: 10vw;
     padding-right: 10vw;
     display: block;
+    position: fixed;
+    inset: auto 0% 0%;
   }
 
   .link-left-mobile, .link-right-mobile {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .lunch-logo-outline-mobile {
@@ -2234,9 +2349,41 @@ textarea.w-input, textarea.w-select {
     display: none;
   }
 
+  .text-block {
+    color: #000;
+  }
+
   .text-block-2 {
     color: #000;
     font-size: 16px;
+  }
+
+  .div-block-3 {
+    flex-flow: column;
+    display: flex;
+  }
+
+  .text-block-2-copy {
+    color: #000;
+    padding-top: 0;
+    font-size: 18px;
+  }
+
+  .lunch-about-mobile {
+    aspect-ratio: auto;
+    height: 70vh;
+    max-height: 70vh;
+    margin-top: 5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: block;
+    position: fixed;
+    inset: 0% 0% auto;
+  }
+
+  .mobile-logo {
+    padding-top: 30vh;
+    padding-bottom: 40vh;
   }
 }
 
